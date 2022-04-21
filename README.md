@@ -1,4 +1,4 @@
-# Representing 3D-geometry by SDF
+# Representing 3D-geometry with SDF
 
 ## Researched papers
 
