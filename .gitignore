@@ -1,0 +1,4 @@
+/cache
+/thirdparty
+*__pycache__
+.idea/
