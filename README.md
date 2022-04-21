@@ -99,32 +99,3 @@ Mean time by sample:   0.26 us
 <img src="https://github.com/PavloZakala/Representing-3D-geometry-by-SDF/blob/main/images/table.jpg?raw=true" alt="target_heatmap">
 
 #### test.py:   F1=0.9090
-
-Tasks: 
-1. How to visualize 3d plot 
-    https://github.com/pyvista/pyvista
-    https://docs.pyvista.org/examples/00-load/read-file.html
-   
-1.1 Research 3d PolyData (vertices, faces, lines)
-    https://docs.pyvista.org/api/core/_autosummary/pyvista.PolyData.html
-
-2. Research SDF
-    https://stackoverflow.com/questions/68178747/fast-2d-signed-distance
-    https://scikit-robot.readthedocs.io/en/latest/reference/sdfs.html
-    INSTALL (pip install scikit-robot) NOT (pip install skrobot)
-   
-    https://pypi.org/project/mesh-to-sdf/
-    
-    DeepSDF:
-    https://medium.com/syncedreview/facebook-mit-uw-introduce-deepsdf-ai-for-3d-shape-representation-75416481e1be 
-   
-    AtlasNet and OGN
-   
-
-Benchmark
-https://pytorch.org/tutorials/recipes/recipes/benchmark.html
-
-
-https://arxiv.org/pdf/1802.05384.pdf
-https://arxiv.org/pdf/1901.05103.pdf
-https://arxiv.org/pdf/2006.09662.pdf
