@@ -4,7 +4,7 @@
 
 Base: [DeepSDF](https://arxiv.org/pdf/1901.05103.pdf)
 
-Other link: 
+Other links: 
 - https://arxiv.org/pdf/1802.05384.pdf
 - https://arxiv.org/pdf/2006.09662.pdf
 - https://arxiv.org/pdf/2006.09661.pdf
@@ -21,7 +21,7 @@ GitHub:
         
 Висновки з експериментів:
 - Оптимальний batch_size (1024, 1024 * 16). Якщо менше, навчається занадто повільно, якщо більше - погано сходиться
-- hidden_lauer_size = 256 оптимальний. Якщо 128, то F1 не більше 0.8
+- hidden_layer_size = 256 оптимальний. Якщо 128, то F1 не більше 0.8
 - Результат сильно залежться від деталізації даних. scan_resolution треба ставити більшим.
 - L2 loss - добре збігання на початку, і швидке формування форми моделі, але слабка деталзація
 
@@ -68,34 +68,30 @@ Mean batch time:   4.24 ms
 Mean time by sample:   0.26 us
 ```
 
-
-
-
 ### bunny_coarse 
+#### test.py:   F1:0.8904
 <img src="https://github.com/PavloZakala/Representing-3D-geometry-by-SDF/blob/main/images/bunny_coarse.jpg?raw=true" alt="target_heatmap">
 
-#### test.py:   F1:0.8904
-
+### dragon 
+#### test.py:   F1=0.7991
 <img src="https://github.com/PavloZakala/Representing-3D-geometry-by-SDF/blob/main/images/dragon.jpg?raw=true" alt="target_heatmap">
 
-#### test.py:   F1=0.7991
-
+### plane 
+#### test.py:   F1=0.9165
 <img src="https://github.com/PavloZakala/Representing-3D-geometry-by-SDF/blob/main/images/plane.jpg?raw=true" alt="target_heatmap">
 
-#### test.py:   F1=0.9165
-
+### chair
+#### test.py:   F1=0.8697 (There is a bug of visualization)
 <img src="https://github.com/PavloZakala/Representing-3D-geometry-by-SDF/blob/main/images/chair.jpg?raw=true" alt="target_heatmap">
 
-#### test.py:   F1=0.8697 (There is a bug of visualization)
-
+### lamp 
+#### test.py:   F1=0.8830 (There is a bug of visualization)
 <img src="https://github.com/PavloZakala/Representing-3D-geometry-by-SDF/blob/main/images/lamp.jpg?raw=true" alt="target_heatmap">
 
-#### test.py:   F1=0.8830 (There is a bug of visualization)
-
+### sofa 
+#### test.py:   F1=0.9014
 <img src="https://github.com/PavloZakala/Representing-3D-geometry-by-SDF/blob/main/images/sofa.jpg?raw=true" alt="target_heatmap">
 
-#### test.py:   F1=0.9014
-
-<img src="https://github.com/PavloZakala/Representing-3D-geometry-by-SDF/blob/main/images/table.jpg?raw=true" alt="target_heatmap">
-
+### table 
 #### test.py:   F1=0.9090
+<img src="https://github.com/PavloZakala/Representing-3D-geometry-by-SDF/blob/main/images/table.jpg?raw=true" alt="target_heatmap">
